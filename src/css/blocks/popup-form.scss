@@ -1,0 +1,42 @@
+.popup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #000;
+  display: none;
+  background-color: #313131;
+  z-index: 20;
+}
+
+
+.popup-form__container {
+  padding: rem(10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: rem(310px);
+  min-height: rem(180px);
+
+  background-color: #fff;
+}
+
+.popup-form__content {
+  margin-bottom: rem(15px);
+
+  text-align: center;
+}
+
+.input-error {
+  box-shadow: 0 0 0 2px #F5170E;
+}
+
+.error-popup-form {
+  color: red;
+}

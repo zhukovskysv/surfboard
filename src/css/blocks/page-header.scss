@@ -1,0 +1,44 @@
+.page-header {
+  height: 100vh;
+  min-height: 36.12rem;
+
+  color: #fff;
+
+  background-color: #1968B1;
+
+  background-image: url('../img/page-header-bg-4x.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include tablets {
+    background-image: url('../img/page-header-bg-2x.jpg');
+    background-position: top rem(90px) center;
+  }
+
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  padding-top: 1.67rem;
+  padding-bottom: 3.34rem;
+
+  @include tablets {
+    padding-top: 1.3rem;
+    padding-bottom: 0;
+  }
+
+  @include phones {
+    padding-top: 1rem;
+  }
+}
+
+.page-header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

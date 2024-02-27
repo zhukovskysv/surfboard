@@ -1,0 +1,24 @@
+.btn {
+  padding: 1.12rem 2.23rem;
+  border-radius: 100px;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1;
+
+  background-color: #FEDB3F;
+}
+
+.btn:hover {
+  background-color: #FFD517;
+}
+
+.btn--reset {
+  color: var(--white-base);
+  margin-left: 1.12rem;
+}
+
+.btn--reset:hover {
+  color: #FFD517;
+}

@@ -1,0 +1,20 @@
+@function rem($px) {
+  @return $px / 18px + 0rem;
+}
+
+/*
+Поиск все значений в px в папке css для замены на rem($px)
+(?!rem\()-?\d+px(?!\))
+*/
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

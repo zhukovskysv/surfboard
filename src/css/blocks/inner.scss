@@ -1,0 +1,28 @@
+.inner {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.inner__title {
+  width: 42%;
+  margin-bottom: 1.12rem;
+
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.inner__text {
+  margin-bottom: 2.23rem;
+
+  font-size: 1.17rem;
+}

@@ -1,0 +1,34 @@
+.contacts {
+  font-style: normal;
+}
+
+.contacts__tel {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__tel.contacts__tel-footer {
+  display: flex;
+}
+
+.contacts__icon {
+  margin-right: 0.34rem;
+  flex-shrink: 0;
+}
+
+.contacts__number {
+  font-size: 1.23rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+  .contacts__tel {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+}

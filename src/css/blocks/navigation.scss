@@ -1,0 +1,23 @@
+.navigation {
+  margin: 0 1.67rem;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.12rem;
+  flex-wrap: wrap;
+}
+
+.navigation__link {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navigation__link:hover {
+  color: #FFD517;
+}

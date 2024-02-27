@@ -1,0 +1,59 @@
+.popup-menu {
+  display: none;
+
+  @include tablets {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    font-size: rem(36px);
+    color: #fff;
+
+    background-color: #333537;
+  }
+}
+
+.popup-menu__list {
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.popup-menu__btn {
+  @include tablets {
+    margin-right: rem(40px);
+  }
+}
+
+.popup-menu__item {
+  @include tablets {
+    margin-bottom: rem(35px);
+  }
+}
+
+.popup-menu__item:last-child {
+  @include tablets {
+    margin-bottom: 0;
+  }
+}
+
+.popup-menu--active {
+  left: 0;
+  opacity: 1;
+}
+
+.body--active-menu {
+  overflow: hidden;
+}

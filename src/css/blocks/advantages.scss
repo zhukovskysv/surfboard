@@ -1,0 +1,139 @@
+.advantages {
+  height: 100vh;
+  min-height: 36.12rem;
+
+  background-color: var(--white-base);
+}
+
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.advantages__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.78rem;
+}
+
+.advantages__text {
+  text-align: center;
+  padding: 0 30%;
+  color: #667667;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.advantages__item:last-child {
+  padding-right: 0;
+}
+
+.advantages__item:first-child {
+  padding-left: 0;
+}
+
+.advantages__item::before {
+  content: url('../img/icon-advantages.png');
+  position: absolute;
+  top: rem(50px);
+  right: 0;
+  transform: translateX(50%);
+}
+
+.advantages__item:last-child::before {
+  content: "";
+  display: none;
+}
+
+.advantages__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.12rem;
+  height: 7.12rem;
+  border-radius: 50%;
+  margin-bottom: 1.12rem;
+
+  background-color: #F2F5F4;
+}
+
+.advantages__pic {
+  height: 3.78rem;
+}
+
+.advantages__content {
+  text-align: center;
+}
+
+.advantages__title {
+  margin-bottom: 1.12rem;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black-title);
+}
+
+.advantages__desc {
+  color: var(--grey-text);
+}
+
+@media (max-width: 768px) {
+  .advantages__item::before {
+    display: none;
+  }
+
+  .advantages__text {
+    padding: 0 12%;
+  }
+
+  .advantages__item {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .advantages__list {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 0;
+    flex-direction: row;
+    flex: 0;
+  }
+
+  .advantages__header {
+    margin-right: 10px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 0.7rem;
+    text-align: left;
+  }
+
+  .advantages__desc {
+    width: 90%;
+    text-align: left;
+  }
+}

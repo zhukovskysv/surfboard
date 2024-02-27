@@ -1,0 +1,23 @@
+.page-title {
+  font-size: 2.67rem;
+  font-weight: 700;
+  color: var(--black-title);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.84rem;
+}
+
+.page-title--orders {
+  margin-bottom: 3.34rem;
+
+  color: inherit;
+}
+
+.page-title--teams {
+  margin-bottom: 3.06rem;
+}
+
+.page-title--jobs,
+.page-title--reviews {
+  margin-bottom: 1.67rem;
+}

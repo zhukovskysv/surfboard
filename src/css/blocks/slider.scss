@@ -1,0 +1,41 @@
+.slider {
+  height: 100vh;
+  min-height: 36.12rem;
+
+  background-color: #F8FAF9;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slider__box {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+
+  @include tablets {
+    .slider__item {
+      flex-direction: column;
+      justify-content: center;
+      column-gap: 0;
+    }
+  }
+}
+
+.slider__list {
+  position: relative;
+  right: 0;
+  transition: right .3s;
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+  column-gap: 7%;
+  height: 100%;
+  width: 100%;
+}

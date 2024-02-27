@@ -1,0 +1,44 @@
+.hamburger {
+  @include tablets {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    z-index: 15;
+
+    width: rem(26px);
+    height: rem(26px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.hamburger__plank {
+  @include tablets {
+    display: flex;
+    width: 100%;
+    height: rem(5px);
+    border-radius: rem(10px);
+
+    background-color: #fff;
+  }
+}
+
+.hamburger--active .hamburger__plank:nth-child(2) {
+  @include tablets {
+    opacity: 0;
+  }
+}
+
+.hamburger--active .hamburger__plank:nth-child(3) {
+  @include tablets {
+    transform: rotate(45deg) translateY(2px) translateX(-2px);
+  }
+}
+
+.hamburger--active .hamburger__plank:nth-child(4) {
+  @include tablets {
+    transform: rotate(-45deg) translateY(-8px) translateX(5px);
+  }
+}
+

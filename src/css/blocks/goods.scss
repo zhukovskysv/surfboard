@@ -1,0 +1,159 @@
+.goods {
+  height: 100vh;
+  min-height: 36.12rem;
+
+  background-color: #F8FAF9;
+}
+
+.goods__col {
+  flex: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.dropdown__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: rem(90px);
+  height: rem(90px);
+  color: #fff;
+  font-size: rem(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: rem(50px);
+
+  background-color: #3A587E;
+}
+
+.dropdown__list {
+  position: absolute;
+  top: 0;
+  left: rem(-7777px);
+
+  opacity: 0;
+  transition: opacity .7s;
+  display: flex;
+  flex-direction: column;
+  width: rem(270px);
+  min-height: rem(290px);
+  padding: rem(15px);
+
+  background-color: #c2c4c3;
+}
+
+.dropdown__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: rem(12px);
+}
+
+.dropdown__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(10px);
+}
+
+.dropdown__text {
+  margin-right: auto;
+}
+
+
+.dropdown:hover .dropdown__list {
+  left: 100%;
+  opacity: 1;
+}
+
+.goods__col--bg {
+  background-image: url('../img/goods-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.goods__title {
+  margin-bottom: rem(25px);
+
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.goods__text {
+  margin-bottom: rem(25px);
+
+  color: #666666;
+}
+
+.goods__list {
+  display: flex;
+  column-gap: rem(50px);
+  margin-bottom: rem(25px);
+}
+
+.goods__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__desc {
+  font-weight: 700;
+}
+
+.goods__box {
+  display: flex;
+  align-items: center;
+}
+
+.goods__price {
+  font-size: rem(60px);
+  font-weight: 300;
+  margin-right: rem(30px);
+}
+
+@media (max-width: 768px) {
+
+  .goods__col {
+    flex: 0;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .goods__title {
+    text-align: center;
+  }
+
+  .goods__text {
+    text-align: center;
+  }
+
+  .goods__list {
+    justify-content: center;
+  }
+
+  .goods__box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .goods__col {
+    flex: 0;
+  }
+
+  .goods__container {
+    justify-content: center;
+  }
+}
