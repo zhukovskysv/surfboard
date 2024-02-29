@@ -28,7 +28,7 @@
 }
 
 .fixed-menu__item--active .fixed-menu__btn {
-  border-color: red;
+  border-color: #fff;
 }
 
 .fixed-menu__btn::before {
@@ -43,5 +43,13 @@
   height: rem(8px);
   border-radius: 50%;
 
-  background-color: red;
+  background-color: #fff;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__btn {
+  border-color: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__btn::before {
+  background-color: #000;
 }

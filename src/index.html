@@ -13,7 +13,7 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section class="page-header">
+      <section class="page-header" data-sidemenu-theme="white" data-section-id="page-header">
         <div class="container page-header__container">
 
           <header class="page-header__box">
@@ -25,25 +25,25 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">О нас</a>
+                  <a class="navigation__link" href="#" data-scroll-to="advantages">О нас</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Серфборды</a>
+                  <a class="navigation__link" href="#" data-scroll-to="slider">Серфборды</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Команда</a>
+                  <a class="navigation__link" href="#" data-scroll-to="teams">Команда</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Меню</a>
+                  <a class="navigation__link" href="#" data-scroll-to="catalogs">Меню</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Отзывы</a>
+                  <a class="navigation__link" href="#" data-scroll-to="reviews">Отзывы</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Как мы работаем</a>
+                  <a class="navigation__link" href="#" data-scroll-to="jobs">Как мы работаем</a>
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Контакты</a>
+                  <a class="navigation__link" href="#" data-scroll-to="maps">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -100,7 +100,7 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-sidemenu-theme="black" data-section-id="advantages">
         <div class="container advantages__container">
           <div class="advantages__row">
             <h2 class="page-title">Почему Surfboard?</h2>
@@ -155,7 +155,7 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section class="slider" data-sidemenu-theme="black" data-section-id="slider">
         <div class="container slider__container">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <button class="slider__btn" type="button" id="left">
@@ -337,7 +337,7 @@
         </div>
       </section>
 
-      <section class="teams">
+      <section class="teams" data-sidemenu-theme="black" data-section-id="teams">
         <div class="container teams__container">
           <h2 class="page-title page-title--teams">Команда</h2>
           <ul class="teams__list teams--version--desktop">
@@ -429,10 +429,10 @@
         </div>
       </section>
 
-      <section class="catalogs">
-        <!-- <div class="container">
-            <h2 class="page-title">Меню</h2>
-          </div> -->
+      <section class="catalogs" data-sidemenu-theme="white" data-section-id="catalogs">
+        <div class="container catalogs-title__container">
+          <h2 class="page-title page-title--catalogs">Меню</h2>
+        </div>
         <ul class="catalogs__list">
           <li class="catalogs__item">
             <button class="catalogs__btn catalogs__btn-one" type="button">
@@ -485,7 +485,7 @@
         </ul>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" data-sidemenu-theme="black" data-section-id="reviews">
         <div class="container reviews__container">
           <h2 class="page-title page-title--reviews">Отзывы</h2>
           <ul class="reviews__list">
@@ -575,16 +575,31 @@
         </div>
       </section>
 
-      <section class="jobs">
+      <section class="jobs" data-sidemenu-theme="black" data-section-id="jobs">
         <div class="container jobs__container">
           <h2 class="page-title page-title--jobs">Как мы работаем</h2>
-          <div class="jobs__video">
-            <img class="jobs__pic" src="./img/video.jpg" alt="Видео">
+          <div class="player-section__container">
+            <div class="player">
+              <div class="player__wrapper">
+                <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> :
+                  <span class="player__duration-estimate">0:00</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="orders">
+      <section class="orders" data-sidemenu-theme="white" data-section-id="orders">
         <div class="container orders__container">
           <h2 class="page-title page-title--orders">Закажите доску</h2>
           <form class="form">
@@ -666,7 +681,7 @@
         </div>
       </section>
 
-      <section class="maps">
+      <section class="maps" data-sidemenu-theme="black" data-section-id="maps">
         <h2 class="visually-hidden">Карта</h2>
         <div id="map"></div>
         <footer class="footer">
@@ -754,31 +769,31 @@
   <div class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="page-header"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="advantages"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="slider"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="teams"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="catalogs"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="reviews"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="jobs"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="orders"></button>
       </li>
       <li class="fixed-menu__item">
-        <button class="fixed-menu__btn" type="button"></button>
+        <button class="fixed-menu__btn" type="button" data-scroll-to="maps"></button>
       </li>
     </ul>
   </div>
@@ -799,6 +814,7 @@
     </div>
   </div>
 
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/main.min.js"></script>
 </body>
